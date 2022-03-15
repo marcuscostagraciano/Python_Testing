@@ -41,5 +41,5 @@ class Manager(Employee):
         
 
 
-emp1 = Employee("joão","pinto",16,1500)
-mng1 = Manager("jan","pin",18,1600,emp1)
+emp1 = Employee("Employee","number1",16,1500)
+mng1 = Manager("Manager","number1",18,1600,emp1)
