@@ -1,6 +1,3 @@
-from operator import index
-
-
 sorts = {
     "Bubble Sort": True,
     "Selection Sort": True,
