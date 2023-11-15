@@ -1,6 +1,6 @@
 # Data Warehouse creation and population
 
-Little project to solve the problem with the repetitive creation and population of data warehouses from college
+Little project to solve the problem with the repetitive creation and population of data warehouses from college (being lazy with alter tables 🤡)
 
 ## Modules list:
 - Numpy
