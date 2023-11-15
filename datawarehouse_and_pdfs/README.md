@@ -2,11 +2,13 @@
 
 Little project to solve the problem with the repetitive creation and population of data warehouses from college (being lazy with alter tables 🤡)
 
+
 ## Modules list:
+- MySQL Connector/Python
 - Numpy
 - Pandas
-- MySQL Connector/Python
 - Psycopg2
+- Pypdf
 
 
 ## To do:
