@@ -2,7 +2,7 @@ from pypdf import PdfReader
 
 TABLE_SEPARATOR: str = "Indexes"
 
-file_name: str = "modelagem_dw.pdf"
+file_name: str = r".\pdf_reading\modelagem_dw.pdf"
 page_content: str = ""
 tables_list: list[str] = []
 
