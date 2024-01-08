@@ -1,4 +1,11 @@
 from pypdf import PdfReader
+from pydantic import BaseModel
+
+
+class DataBaseTable(BaseModel):
+    tbl_name: str
+    columns: list[str]
+
 
 TABLE_SEPARATOR: str = "Indexes"
 
@@ -13,12 +20,21 @@ with open(f"{file_name}", "rb") as file:
 
 # print(page_content)
 
-print(len(page_content))
+# print(len(page_content))
 
-ft_table = page_content[:page_content.find(TABLE_SEPARATOR)]
-# print(ft_table)
+first_table = page_content[:page_content.find(TABLE_SEPARATOR)].split('\n')
+# print(first_table)
 
-page_content = page_content[page_content.find(TABLE_SEPARATOR)+len(TABLE_SEPARATOR):]
 
-print(len(page_content))
+# print(first_table)
+pydantic_test = DataBaseTable(
+    tbl_name=first_table[0],
+    columns=first_table[1:-1])
+
+print(pydantic_test)
+
+# page_content = page_content[page_content.find(TABLE_SEPARATOR)+len(TABLE_SEPARATOR):]
+
+
+# print(len(page_content))
 # print(tables_list)
