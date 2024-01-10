@@ -6,6 +6,7 @@ from recipe_classes import Ingredients
 
 @dataclass
 class Recipe:
+    recipe_name: str
     ingredients_list: list[Ingredients]
 
     @property
