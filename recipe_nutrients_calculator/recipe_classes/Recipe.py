@@ -1,4 +1,6 @@
 from dataclasses import dataclass
+from typing import Dict
+
 from recipe_classes import Ingredients
 
 
@@ -30,3 +32,17 @@ class Recipe:
     def total_carbs(self) -> float:
         return sum([ingredient.carbs for
                     ingredient in self.ingredients_list])
+
+    @property
+    def macros(self) -> Dict[str, float]:
+        """
+        Returns the quantity of the 3 macro nutrients present in the recipe.
+
+        Returns:
+            Dict[str, float]: Macros quantities
+        """
+        return {
+            'carbs': self.total_carbs,
+            'fats': self.total_fats,
+            'proteins': self.total_proteins
+        }
