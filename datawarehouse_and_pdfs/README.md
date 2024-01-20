@@ -8,6 +8,7 @@ Little project to solve the problem with the repetitive creation and population 
 - Numpy
 - Pandas
 - Psycopg2
+- Pydantic
 - Pypdf
 
 ## Steps:
